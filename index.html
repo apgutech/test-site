@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>Реальный адрес сервера:</h1>
-    <p><?php echo $_SERVER['SERVER_ADDR']; ?></p>
+    <p><?php echo gethostbyname(gethostname()); ?></p>
 </body>
 </html>
