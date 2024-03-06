@@ -2,20 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Привет, мир!</title>
-    <script>
-        function showServerAddress() {
-            // Получаем адрес сервера
-            var serverAddress = window.location.hostname;
-            // Получаем элемент, в который будем выводить адрес сервера
-            var serverAddressElement = document.getElementById('serverAddress');
-            // Устанавливаем текст элемента равным адресу сервера
-            serverAddressElement.textContent = serverAddress;
-        }
-    </script>
+    <title>Реальный адрес сервера</title>
 </head>
-<body onload="showServerAddress()">
-    <h1>Привет, мир!</h1>
-    <p>Адрес сервера: <span id="serverAddress"></span></p>
+<body>
+    <h1>Реальный адрес сервера:</h1>
+    <p><?php echo $_SERVER['SERVER_ADDR']; ?></p>
 </body>
 </html>
