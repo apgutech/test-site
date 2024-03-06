@@ -5,8 +5,12 @@
     <title>Привет, мир!</title>
     <script>
         function showServerAddress() {
+            // Получаем адрес сервера
             var serverAddress = window.location.hostname;
-            document.getElementById('serverAddress').textContent = serverAddress;
+            // Получаем элемент, в который будем выводить адрес сервера
+            var serverAddressElement = document.getElementById('serverAddress');
+            // Устанавливаем текст элемента равным адресу сервера
+            serverAddressElement.textContent = serverAddress;
         }
     </script>
 </head>
