@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Привет, мир!</title>
+    <script>
+        function showServerAddress() {
+            var serverAddress = window.location.hostname;
+            document.getElementById('serverAddress').textContent = serverAddress;
+        }
+    </script>
+</head>
+<body onload="showServerAddress()">
+    <h1>Привет, мир!</h1>
+    <p>Адрес сервера: <span id="serverAddress"></span></p>
+</body>
+</html>
